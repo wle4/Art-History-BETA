@@ -16,7 +16,7 @@ function setup() {
   var href = setParams(a.href, 'color', clr);
   a.href = href;
 
-  image(img, 10, 10, 50, 50);
+  image(img, 10, 10);
 
   background(clr);
   fill('yellow');
