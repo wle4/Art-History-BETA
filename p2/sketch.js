@@ -16,8 +16,6 @@ function setup() {
   var href = setParams(a.href, 'color', clr);
   a.href = href;
 
-  image(img, 10, 10);
-
   background(clr);
   fill('yellow');
   noStroke();
@@ -27,4 +25,5 @@ function draw() {
   for(var i = 0; i < num; i++){
     ellipse(width/2, 50+i*30, 20);
   }
+  image(img, 10, 10);
 }
