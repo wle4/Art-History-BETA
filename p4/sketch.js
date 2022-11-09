@@ -1,6 +1,6 @@
 var bedX = 0;
 var bedY = 0;
-let s = 'Ambrogio Lorenzetti made this panel in part of a series of panels to demonstrate the government during this time. It shows a polar contrast of different. This panel shows good government, whereas another panel shows bad government. The other painting shows lots of crime, whereas this painting shows less.';
+let s = 'Ambrogio Lorenzetti made this panel in part of a series of panels to demonstrate the government during this time. It shows a polar contrast of different wealth. This panel shows good government, whereas another panel shows bad government. The other painting shows lots of crime, whereas this painting shows less.';
 
 function preload() {
   img = loadImage("12.png");
