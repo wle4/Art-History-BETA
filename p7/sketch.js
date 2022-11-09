@@ -35,7 +35,7 @@ function draw() {
   {if (bedX > 600 && bedY > 200 && bedX < 650 && bedY < 250)
     fill(240,248,255)
   {if (bedX > 600 && bedY > 200 && bedX < 650 && bedY < 250)
-    text(s, 20, 40, 350, 600); 
+    text(s, 20, 300, 350, 600); 
     textFont('Georgia');
     textSize(15)
     textStyle(BOLD);
