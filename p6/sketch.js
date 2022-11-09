@@ -1,17 +1,17 @@
 var bedX = 0;
 var bedY = 0;
-let s = 'Located in the southern part of Argentina, these paintings were created from 9,000-13,000 years ago. Natural paint was used from iron and various other minerals.';
+let s = 'This famous piece by Monet demostrates how up-close, the strokes of the painting look messy and do not make sense. However, from afar, a bridge can be seen above a pond of lillies.';
 
 function preload() {
-  img = loadImage("10.png");
-  base = loadImage("caveman..jpg")
+  img = loadImage("14.png");
+  base = loadImage("lilly.jpg")
 }
 
 function mouseDragged() {
   if ((mouseX > bedX - 200) && (mouseX < bedX + 200)) {
   if ((mouseY > bedY - 200) && (mouseY < bedY + 200)) {
-      bedX = mouseX-80;
-      bedY = mouseY-80
+      bedX = mouseX-40;
+      bedY = mouseY-40
     }
   }
 }
@@ -21,21 +21,21 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(190);
 
-  image(img, bedX, bedY, 100, 100);
-  rect(300, 200, 100, 100)
+  image(img, bedX, bedY, 150, 150);
+  rect(400, 250, 100, 100)
   fill(100); 
   fill(100,50); 
   fill(0,0,255);
   fill(0,0,255,50);
   
-  {if (bedX > 250 && bedY > 150 && bedX < 350 && bedY < 250)
-    background(base); }
-   {if (bedX > 250 && bedY > 150 && bedX < 350 && bedY < 250)
+  {if (bedX > 400 && bedY > 250 && bedX < 450 && bedY < 300)
+    background(base);}
+  {if (bedX > 400 && bedY > 250 && bedX < 450 && bedY < 300)
     fill(240,248,255)
-   {if (bedX > 250 && bedY > 150 && bedX < 350 && bedY < 250)
-    text(s, windowWidth/5, windowHeight/1.5, 350, 500); 
+  {if (bedX > 400 && bedY > 250 && bedX < 450 && bedY < 300)
+    text(s, 20, 40, 350, 600); 
     textFont('Georgia');
     textSize(15)
     textStyle(BOLD);
@@ -46,3 +46,4 @@ function draw() {
 
   
 }
+//https://www.claude-monet.com/the-water-lily-pond.jsp
