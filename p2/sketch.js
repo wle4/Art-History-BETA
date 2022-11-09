@@ -1,29 +1,48 @@
-let num;
-let img;
+var bedX = 0;
+var bedY = 0;
+let s = 'Located in the southern part of Argentina, these paintings were created from 9,000-13,000 years ago. Natural paint was used from iron and various other minerals.';
+
 function preload() {
-  img = loadImage('statu2.jpg');
+  img = loadImage("10.png");
+  base = loadImage("caveman..jpg")
+}
+
+function mouseDragged() {
+  if ((mouseX > bedX - 200) && (mouseX < bedX + 200)) {
+  if ((mouseY > bedY - 200) && (mouseY < bedY + 200)) {
+      bedX = mouseX-80;
+      bedY = mouseY-80
+    }
+  }
 }
 
 function setup() {
-  let canvas = createCanvas(0.5*windowWidth, 0.5*windowWidth); //create canvas half screen width
-  canvas.addClass('centered'); //add centered class to canvas (see style.css)
-   //get color value from URL
-  let params = getParams();
-  let clr = params.color; 
-  num = params.num; 
-  //add color values in link to next page
-  var a = document.getElementsByTagName('a')[0];
-  var href = setParams(a.href, 'color', clr);
-  a.href = href;
-
-  background(clr);
-  fill('yellow');
-  noStroke();
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  image(img, 0, 0);
-  for(var i = 0; i < num; i++){
-    ellipse(width/2, 50+i*30, 20);
+  background(220);
+
+  image(img, bedX, bedY, 100, 100);
+  rect(300, 200, 100, 100)
+  fill(100); 
+  fill(100,50); 
+  fill(0,0,255);
+  fill(0,0,255,50);
+  
+  {if (bedX > 250 && bedY > 150 && bedX < 350 && bedY < 250)
+    background(base); }
+   {if (bedX > 250 && bedY > 150 && bedX < 350 && bedY < 250)
+    fill(240,248,255)
+   {if (bedX > 250 && bedY > 150 && bedX < 350 && bedY < 250)
+    text(s, windowWidth/5, windowHeight/1.5, 350, 500); 
+    textFont('Georgia');
+    textSize(15)
+    textStyle(BOLD);
   }
+
+   
+  }
+
+  
 }
