@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(190);
 
   image(img, bedX, bedY, 100, 100);
   rect(300, 200, 100, 100)
