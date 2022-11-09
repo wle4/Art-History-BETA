@@ -1,10 +1,10 @@
 var bedX = 0;
 var bedY = 0;
-let s = 'Warhol, a famous contemporary artist, made this to signify the mass-production of products. He made it to represent almost like a grocery store shelf, to demonstrate todays life of mass consumption and production';
+let s = 'This painting represents urbanization in todays society in America. This image was actually represented New York, and depicts the loneliness of urbanization.';
 
 function preload() {
-  img = loadImage("16.png");
-  base = loadImage("warhol.jpg")
+  img = loadImage("15.png");
+  base = loadImage("chicago.jpg")
 }
 
 function mouseDragged() {
@@ -33,7 +33,7 @@ function draw() {
   {if (bedX > 220 && bedY > 190 && bedX < 270 && bedY < 240)
     background(base);}
   {if (bedX > 220 && bedY > 190 && bedX < 270 && bedY < 240)
-    fill(0)
+    fill(240,248,255)
   {if (bedX > 220 && bedY > 190 && bedX < 270 && bedY < 240)
     text(s, 20, 40, 350, 600); 
     textFont('Georgia');
@@ -46,4 +46,4 @@ function draw() {
 
   
 }
-//https://origins.osu.edu/milestones/november-2012-andy-warhol-s-campbell-s-soup-cans-1962?language_content_entity=en
+//https://www.artic.edu/artworks/111628/nighthawks
