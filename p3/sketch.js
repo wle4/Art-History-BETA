@@ -24,17 +24,17 @@ function draw() {
   background(190);
 
   image(img, bedX, bedY, 100, 100);
-  rect(270, 120, 100, 100)
+  rect(650, 160, 100, 100)
   fill(100); 
   fill(100,50); 
   fill(0,0,255);
   fill(0,0,255,50);
   
-  {if (bedX > 270 && bedY > 120 && bedX < 320 && bedY < 170)
+  {if (bedX > 650 && bedY > 160 && bedX < 700 && bedY < 210)
     background(base); }
-   {if (bedX > 270 && bedY > 120 && bedX < 320 && bedY < 170)
+   {if (bedX > 650 && bedY > 160 && bedX < 700 && bedY < 210)
     fill(240,248,255)
-   {if (bedX > 270 && bedY > 120 && bedX < 320 && bedY < 170)
+   {if (bedX > 650 && bedY > 160 && bedX < 700 && bedY < 210)
     text(s, windowWidth/5, windowHeight/1.5, 350, 500); 
     textFont('Georgia');
     textSize(15)
